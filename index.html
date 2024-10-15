@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nestle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href=""><span class="material-symbols-outlined">dashboard</span><br>Dashboard</a></li>
+                <li><a href="#sales"><span class="material-symbols-outlined">add_shopping_cart</span><br>Sales</a></li>
+                <li><a href="#orders"><span class="material-symbols-outlined">receipt</span><br>Orders</a></li>
+                <li><a href="#customers"><span class="material-symbols-outlined">contact_page</span><br>Customer</a></li>
+                <li><a href="#items"><span class="material-symbols-outlined">garage_home</span><br>Items</a></li>
+                <li><a href="#inventory"><span class="material-symbols-outlined">package_2</span><br>Inventory</a></li>
+                <li><a href="#alerts"><span class="material-symbols-outlined">notifications</span><br>Alerts</a></li>
+            </ul>
+            <img src="down logo.png" style="margin-top: 15px;">
+        </nav>   
+    </div>
+
+    <div class="content">
+        <div class="section" id="section">
+            <div >
+                <div class="searchbook">    
+                    <div class="searchbox">
+                        <span class="material-symbols-outlined" style="padding-top: 5px;">search</span>
+                        <input type="search" placeholder="Search" >
+                    </div>
+                    <div class="catlog">
+                        <span class="material-symbols-outlined">menu_book</span>
+                    </div>
+                </div>  
+                <div class="fix">
+                    <div class="carty">
+                        <div><b>Cart summary</b></div>
+                        <div class="order">Order ID: 000001</div>
+                    </div>
+                    <div class="buttons3">
+                        <div class="trio"><span class="material-symbols-outlined">person</span></div>
+                        <div class="trio"><span class="material-symbols-outlined">table_restaurant</span></div> 
+                        <div class="trio"><span class="material-symbols-outlined">more_vert</span></div>
+                    </div>    
+                </div>
+            </div> 
+            <table>
+                <th style="padding-left:40px;">Item</th>
+                <th style="padding-left:28%;">Qty</th>
+                <th style="padding-left:35%; padding-top: 20px;padding-bottom: 20px;">Amount (SAR)</th>
+            </table>
+            <div class="adder">
+                <div class="carting">
+                    <img src="emptycart.png">   
+                    <div class="text"><b>Cart is empty </b>
+                        <p style="color:#c3c9cb;padding-top: 10px;"><b>Scan barcode or add items from catalog</b></p> 
+                    </div>
+                </div>
+            </div>      
+        </div>
+
+        <div class="section2" id="section2">
+            <div>
+                <div class="Paymenttitle"><b>Payment Summary</b>
+                    <a href="account"><span class="material-symbols-outlined">account_circle</span>user</a>
+                </div>
+                <div class="Subtotal"><b>Sub total</b>
+                    <p><b>SAR  0.00</b></p>
+                </div>
+                <div class="Subtotal"><b>Taxable amount</b>
+                    <p><b>SAR  0.00</b></p>
+                </div>
+                <div class="Subtotal"><b>Total tax</b>
+                    <p><b>SAR  0.00</b></p>
+                </div>
+                <hr>
+                <div class="Total"><b>Grand Total</b>
+                    <p><b>SAR  0.00</b></p>
+                </div>
+            </div>
+            <div>
+                <hr>
+                <div class="notes"><span class="material-symbols-outlined">add_notes</span><b>Add notes</b></div>
+                <hr>
+                <div class="boxes3">
+                    <div class="customer"><span class="material-symbols-outlined">account_box</span><b>Customer</b></div>
+                    <div class="customer"><img src="tag.png" alt=""><b>Coupon</b></div>
+                    <div class="customer"><img src="discount.png" alt=""><b>Discount</b></div>
+                </div>
+                <hr>
+                <div class="boxes2">
+                    <div class="print"><span class="material-symbols-outlined">print</span><b>Print bill</b></div>
+                    <div class="proceed"><b>Proceed to payment</b></div>
+                </div>
+            </div>
+            
+            
+        </div> 
+        <div class="section0" id="section0" style="display: none;">
+          <div class="top">
+            <div class="searchbook">    
+                <div class="searchbox">
+                    <span class="material-symbols-outlined" style="padding-top: 5px;">search</span>
+                    <input type="search" placeholder="Search" >
+                </div>
+                <div class="catlog">
+                    <span class="material-symbols-outlined">menu_book</span>
+                </div>
+            </div>  
+            <div class="fix">
+                <div class="carty">
+                    <div><b>Cart summary</b></div>
+                    <div class="order">Order ID: 000001</div>
+                </div>
+                <div class="buttons3">
+                    <div class="trio"><span class="material-symbols-outlined">person</span></div>
+                    <div class="trio"><span class="material-symbols-outlined">table_restaurant</span></div> 
+                    <div class="trio"><span class="material-symbols-outlined">more_vert</span></div>
+                </div>    
+            </div>
+        </div> 
+        <table>
+            <th style="padding-left:40px;">Item</th>
+            <th style="padding-left:28%;">Qty</th>
+            <th style="padding-left:35%; padding-top: 20px;padding-bottom: 20px;">Amount (SAR)</th>
+        </table>
+        <div class="adder">
+            <div class="carting">
+                <img src="emptycart.png">   
+                <div class="text"><b>Cart is empty </b>
+                    <p style="color:#c3c9cb;padding-top: 10px;"><b>Scan barcode or add items from catalog</b></p> 
+                </div>
+            </div>
+        </div> 
+        <div class="underdown">
+          <div class="porul"><b>0</b>Items <b><span class="material-symbols-outlined">stat_1</span></b></div>
+          <div class="uTotal">Total
+            <p><b>SAR  0.00</b></p>
+        </div>
+        </div>
+        </div>
+        <div class="section3" id="section3" style="display: none;">
+                <div>
+                  <div class="cattitle"><b>Catlog</b>
+                    <div class="caticons">
+                      <a href=""><span class="material-symbols-outlined">more_vert</span></a>
+                      <a href=""><span class="material-symbols-outlined">close</span></a>
+                    </div>
+                  </div>
+                  <div class="choices">
+                    <button type="button" class="btn btn-primary"><b>All</b></button>
+                    <button type="button" class="btn btn-primary"><span class="material-symbols-outlined">star</span><b>Favorite</b></button>
+                    <button type="button" class="btn btn-primary"><b>Burger</b></button>
+                    <button type="button" class="btn btn-primary"><b>Sandwich</b></button>
+                    <button type="button" class="btn btn-primary"><b>Juice</b></button>
+                    <button type="button" class="btn btn-primary"><b>Pizza</b></button>
+                    <button type="button" class="btn btn-primary"><b>Fries</b></button>
+                    <button type="button" class="btn btn-primary"><b>nachos</b></button>
+                  </div>    
+              </div>
+              <div>
+              <div class="flop">
+                <div class="menus">
+                  <div class="cards">
+                    <img src="https://joyfoodsunshine.com/wp-content/uploads/2022/11/BBQ-chicken-pizza-recipe-9.jpg" id="food" >
+                    <p id="food-desc"><b>Chicken BBQ Pizza</b></p>
+                    <div class="varients">2 Varients</div> 
+                  </div>
+                  <div class="cards">
+                    <img src="https://thissillygirlskitchen.com/wp-content/uploads/2020/02/homemade-french-fries-8-1-500x500.jpg" id="food" >
+                    <p id="food-desc"><b>French Fries Combo</b></p>
+                     
+                  </div>
+                  <div class="cards">
+                    <img src="https://www.chicken.ca/wp-content/uploads/2013/05/Moist-Chicken-Burgers-1180x580.jpg" id="food" >
+                    <p id="food-desc"><b>Chicken Burger</b></p>
+                    <div class="varients">2 Varients</div> 
+                  </div>
+              </div>
+              <div class="menus">
+                <div class="cards">
+                  <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2014/01/grilled-sandwich-4.jpg" id="food" >
+                  <p id="food-desc"><b>mushroom <br> Sandwich</b></p>
+                  <div class="varients">2 Varients</div> 
+                </div>
+                <div class="cards">
+                  <img src="https://d2lswn7b0fl4u2.cloudfront.net/photos/pg-homemade-watermelon-juice-1692282475.jpg" id="food" >
+                  <p id="food-desc"><b>Watermelon Juice</b></p>
+                  
+                </div>
+                <div class="cards">
+                  <img src="https://www.seriouseats.com/thmb/YBUAG17xy1nWYGPmFcJKeoODTzk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/cheese-sauce-for-cheese-fries-and-nachos-hero-01-e6ccf966688c43ec8025cf9a19678423.jpg" id="food" >
+
+                  <p id="food-desc"><b>plain Nachos</b></p>
+                  <div class="varients">2 Varients</div> 
+                </div>
+            </div>
+            <div class="menus">
+              <div class="cards">
+                <img src="https://www.chefkunalkapur.com/wp-content/uploads/2021/08/CW0_9052-scaled-e1632239738756-1300x865.jpg?v=1630373735" id="food" >
+                <p id="food-desc"><b>Mexican Nachos with salsa</b></p>
+                <div class="varients">2 Varients</div> 
+              </div>
+              <div class="cards">
+                <img src="https://media.istockphoto.com/id/904617420/photo/fresh-mango-smoothie-in-the-glass.jpg?s=612x612&w=0&k=20&c=ogIRn5AfahJNU4W8UmQIZ-mJqL9tgOm9yH_-5WJmkSQ=" id="food" >
+                <p id="food-desc"><b>Mango juice</b></p>
+                
+              </div>
+              <div class="cards">
+                <img src="https://vaya.in/recipes/wp-content/uploads/2018/05/Pomegranate-Juice.jpg" id="food" >
+                <p id="food-desc"><b>Pomegranate juice</b></p>
+                <div class="varients">2 Varients</div> 
+              </div>
+          </div>
+              </div>
+                  
+                  <div class="boxes2">
+                      <div class="print"><span class="material-symbols-outlined">print</span><b>Print bill</b></div>
+                      <div class="proceed"><b>Proceed to payment</b></div>
+                  </div>
+              </div>
+        </div>
+        <div class="section4" id="section4" style="display: none;">
+         
+            <div>
+          <div class="addtitle"> <b>Varients & Add-ons</b>
+            <div class="chbut">></div>
+         </div>
+         <div class="custom-food">
+          <div class="img-con">
+           <img src="https://joyfoodsunshine.com/wp-content/uploads/2022/11/BBQ-chicken-pizza-recipe-9.jpg" id="dress">
+           <div class="topleft">2</div>
+           <div class="topright"><span class="material-symbols-outlined">info</span></div>
+          </div>
+          <div class="food-text"><b>Chicken BQQ Pizza with Mexican Flavoured <br>Toppings</b></div>
+         </div>
+         <div class="button2nos">
+            <div class="addpoints"><b>Varients (2)</b></div>
+            <div class="addpoints"><b>Add-ons</b></div>
+         </div>
+         <div style="margin-top: 15px; font-size: 20px;"><b>Quantity</b></div>
+         <div class="rater">
+            <div class="form"><div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"><label class="form-check-label" for="flexRadioDefault1"><b>Pizza (Large)</b></label></div><div><b>SAR 800.00</b></div></div> 
+            <hr>
+            <div class="form"><div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked><label class="form-check-label" for="flexRadioDefault2"><b>Pizza (Medium)</b></label></div><div><b>SAR 500.00</b></div></div>
+            <hr>
+            <div class="form"><div class="form-check"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked><label class="form-check-label" for="flexRadioDefault2"><b>Pizza (Small)</b></label></div><div><b>SAR 300.00</b></div></div>
+            <hr>
+        </div>
+            </div>
+           
+             <div>
+              <hr>
+              <div class="gtotal"><b>Items</b>
+                <p><b>SAR  4100.00</b></p>
+            </div>
+              <div class="boxes2">
+                <div class="mice"><span class="material-symbols-outlined">add</span><b>1</b><span class="material-symbols-outlined">remove</span>
+                </div>
+                <div class="atoorder"><b>Add to order</b></div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="section6" id="section6" style="display: none;">
+          <div class="top">
+            <div class="searchbook">    
+                <div class="searchbox">
+                    <span class="material-symbols-outlined" style="padding-top: 5px;">search</span>
+                    <input type="search" placeholder="Search" >
+                </div>
+                <div class="catlog">
+                    <span class="material-symbols-outlined">menu_book</span>
+                </div>
+            </div>  
+            <div class="fix">
+                <div class="carty">
+                    <div><b>Cart summary</b></div>
+                    <div class="order">Order ID: 000001</div>
+                </div>
+                <div class="buttons3">
+                    <div class="trio"><span class="material-symbols-outlined">person</span></div>
+                    <div class="trio"><span class="material-symbols-outlined">table_restaurant</span></div> 
+                    <div class="trio"><span class="material-symbols-outlined">more_vert</span></div>
+                </div>    
+            </div>
+        </div> 
+        <table>
+                <th style="padding-left:40px;">Item</th>
+                <th style="padding-left:28%;">Qty</th>
+                <th style="padding-left:35%; padding-top: 20px;padding-bottom: 20px;">Amount (SAR)</th>
+        </table>
+        <div class="lastdance">
+          <div class="lastprice">
+            <div class="lasttext">
+              <div>
+              <div><b>Chicken BQQ Pizza with Mexican Flavoured Toppings</b></div>
+              <div class="order">3 layered pizza with cheese add-ons</div>
+             </div>
+             <div class="qty-amount">
+              <div class="sice"><span class="material-symbols-outlined">add</span><b>2</b><span class="material-symbols-outlined">remove</span>
+              </div>
+              <div class="money"><b>1000.00</b> <span class="material-symbols-outlined">delete</span></div>
+            </div>
+            </div>
+            <hr>
+            <div class="lasttext">
+              <div>
+              <div><b>Mango Juice </b></div>
+              <div class="order">Original Fruits Mixed with Icecream</div>
+             </div>
+             <div class="qty-amount">
+              <div class="sice"><span class="material-symbols-outlined">add</span><b>1</b><span class="material-symbols-outlined">remove</span>
+              </div>
+              <div class="money"><b>500.00</b> <span class="material-symbols-outlined">delete</span></div>
+            </div>
+            </div>
+            <hr>
+            <div class="lasttext">
+              <div>
+              <div><b>Chicken Wings And large Pepsi</b></div>
+              
+             </div>
+             <div class="qty-amount">
+              <div class="sice"><span class="material-symbols-outlined">add</span><b>2</b><span class="material-symbols-outlined">remove</span>
+              </div>
+              <div class="money"><b>900.00</b> <span class="material-symbols-outlined">delete</span></div>
+            </div>
+            </div>
+            <hr>
+            <div class="lasttext">
+              <div>
+              <div><b>Pomegranate Juice and Mexican Nachos Combo</b></div>
+              <div class="order">Spicy Ketup and French Fries</div>
+             </div>
+             <div class="qty-amount">
+              <div class="sice"><span class="material-symbols-outlined">add</span><b>1</b><span class="material-symbols-outlined">remove</span>
+              </div>
+              <div class="money"><b>600.00</b> <span class="material-symbols-outlined">delete</span></div>
+            </div>
+            </div>
+            <hr>
+            <div class="lasttext">
+              <div>
+              <div><b>Chicken Burger with Medium Coke</b></div>
+              
+             </div>
+             <div class="qty-amount">
+              <div class="sice"><span class="material-symbols-outlined">add</span><b>4</b><span class="material-symbols-outlined">remove</span>
+              </div>
+              <div class="money"><b>800.00</b> <span class="material-symbols-outlined">delete</span></div>
+            </div>
+            </div>
+            <hr>
+            <div class="lasttext">
+              <div>
+              <div><b>Plain Nachos with Spicy Toppings</b></div>
+              <div class="order">Peri Peri Add-Ons</div>
+             </div>
+              <div class="qty-amount">
+              <div class="sice"><span class="material-symbols-outlined">add</span><b>1</b><span class="material-symbols-outlined">remove</span>
+              </div>
+              <div class="money"><b>300.00</b> <span class="material-symbols-outlined">delete</span></div>
+            </div>
+            </div>
+            <hr>
+            <div class="lasttext">
+              <div>
+              <div><b>Grape Juice (Large)</b></div>
+              
+             </div>
+             <div class="qty-amount">
+              <div class="sice"><span class="material-symbols-outlined">add</span><b>4</b><span class="material-symbols-outlined">remove</span>
+              </div>
+              <div class="money"><b>400.00</b> <span class="material-symbols-outlined">delete</span></div>
+            </div>
+            </div>
+            <hr>
+            <div class="lasttext">
+              <div>
+              <div><b>French Fries Combo (small)</b></div>
+              <div class="order">2 French Fries with 2 Small Cokes</div>
+             </div>
+             <div class="qty-amount">
+              <div class="sice"><span class="material-symbols-outlined">add</span><b>1</b><span class="material-symbols-outlined">remove</span>
+              </div>
+              <div class="money"><b>200.00</b> <span class="material-symbols-outlined">delete</span></div>
+            </div>
+            </div>
+            <hr>
+          </div>
+        </div>
+        </div>
+        <div class="section5" id="section5" style="display: none;">
+          <div>
+            <div class="Paymenttitle"><b>Payment Summary</b>
+                <a href="account"><span class="material-symbols-outlined">account_circle</span>user</a>
+            </div>
+            <div class="Subtotal"><b>Sub total</b>
+                <p><b>SAR  5000.00</b></p>
+            </div>
+            <div class="Subtotal"><b>Taxable amount</b>
+                <p><b>SAR  4700.00</b></p>
+            </div>
+            <div class="Subtotal"><b>Total tax</b>
+                <p><b>SAR  300.00</b></p>
+            </div>
+            <hr>
+            <div class="Total"><b>Grand Total</b>
+                <p><b>SAR  5000.00</b></p>
+            </div>
+        </div>
+        <div>
+            <hr>
+            <div class="notes"><span class="material-symbols-outlined">add_notes</span><b>Add notes</b></div>
+            <hr>
+            <div class="boxes3">
+                <div class="customer"><span class="material-symbols-outlined">account_box</span><b>Customer</b></div>
+                <div class="customer"><img src="tag.png" alt=""><b>Coupon</b></div>
+                <div class="customer"><img src="discount.png" alt=""><b>Discount</b></div>
+            </div>
+            <hr>
+            <div class="boxes2">
+                <div class="print"><span class="material-symbols-outlined">print</span><b>Print bill</b></div>
+                <div class="proceed"><b>Proceed to payment</b></div>
+            </div>
+        </div>
+        </div>
+
+
+        </div>
+    </div>
+
+    <script src="ript.js"></script>
+</body>
+</html>
